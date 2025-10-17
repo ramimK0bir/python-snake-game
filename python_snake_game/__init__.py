@@ -39,12 +39,12 @@ snake_game.play()
 |And many more you can explore after using this |
 
 ---"""
-__version__ = "1.0.6"
+__version__ = "1.0.7"
 __author__ = "ramimK0bir"
 __email__ = "kobirbiddut81@gmail.com"
 __license__ = "MIT"
 __description__ = "A simple Snake game written in Python for the command-line interface (CLI). Control the snake with arrow keys, eat food to grow, and avoid running into yourself. Built entirely with Python's standard libraries-no third-party packages required."
-__url__ = "https://github.com/ramimK0bir/python-snake-game.git@v1.0.6"
+__url__ = "https://github.com/ramimK0bir/python-snake-game.git@v1.0.7"
 
 
 import random 
