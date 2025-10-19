@@ -39,7 +39,7 @@ snake_game.play()
 |And many more you can explore after using this |
 
 ---"""
-__version__ = "1.0.7"
+__version__ = "1.0.8"
 __author__ = "ramimK0bir"
 __email__ = "kobirbiddut81@gmail.com"
 __license__ = "MIT"
@@ -220,8 +220,28 @@ class SnakeGame :
                         if self.poison_mode :
                             empty_space =[]
                             for item in self.board :
-                                if item not in self.snake_body or item !=self.food :
+                                if item not in self.snake_body  :
                                     empty_space.append(item)
+                            head = self.snake_body[0]
+                            removing_list=[self.food,head]
+                            removing_list.append(   (head[0]+1, head[1] ))
+                            removing_list.append(   (head[0]-1, head[1] ))
+
+                            removing_list.append(   (head[0], head[1]+1 ))
+                            removing_list.append(   (head[0], head[1]-1 ))
+
+                            removing_list.append(   (head[0]-1, head[1]-1))
+                            removing_list.append(   (head[0]+1, head[1]-1))
+
+                            removing_list.append(   (head[0]+1, head[1]+1))
+                            removing_list.append(   (head[0]-1, head[1]+1))
+
+                            for item in  removing_list :
+                                try :
+                                    empty_space.remove(item)
+                                except :
+                                    pass
+                            
                             self.poison_point=0
                             if len(empty_space)  > 1 :
                                 self.poison_point=random.choice(empty_space)

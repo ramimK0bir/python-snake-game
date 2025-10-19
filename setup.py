@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="python_snake_game",
-    version="1.0.7",
+    version="1.0.8",
     description="A simple Snake game written in Python for the command-line interface (CLI). Control the snake with arrow keys, eat food to grow, and avoid running into yourself. Built entirely with Python's standard libraries-no third-party packages required.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
