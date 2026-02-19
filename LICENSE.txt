@@ -1,4 +1,4 @@
-Non-Commercial MIT-style License
+MIT License
 
 Copyright (c) 2025 userAnonymous
 
